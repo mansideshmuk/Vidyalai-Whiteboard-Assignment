@@ -1,6 +1,7 @@
 import "./App.css";
 import { useEffect } from "react";
 import { fabric } from "fabric";
+import Canvas from './Canvas'
 
 function App() {
   useEffect(() => {
@@ -12,7 +13,7 @@ function App() {
     canvas.freeDrawingBrush.color = "#0052cc";
   }, []);
 
-  return <canvas id="canvas" />;
+  return <Canvas id="canvas" />;
 }
 
 export default App;
